@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maraiseelan | Portfolio</title>
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar">
+    <div class="logo">Maraiseelan</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Maraiseelan</span></h1>
+
+        <h2>Web Developer</h2>
+
+        <p>
+            I create responsive websites using HTML, CSS and JavaScript.
+            Passionate about developing modern and user-friendly web applications.
+        </p>
+
+        <a href="#work" class="btn">View My Work</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="marai.png.webp" alt="image">
+    </div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+    <div class="container">
+
+        <h2>About Me</h2>
+<img src="marai.png.webp" alt="image">
+        <div class="about-content">
+
+
+            <div>
+
+                <p>
+                    I am Maraiseelan, a passionate Web Developer focused on creating responsive, 
+                                accessible and visually appealing websites.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies and building projects
+                    that solve real-world problems.
+                </p>
+
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Work -->
+
+<section id="work">
+
+    <h2>My Work</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <img src="https://images01.nicepagecdn.com/page/22/06/website-template-preview-220636.jpg" alt="">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio project.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkufcGqeHgWWZZKP-uPgpwArJATKUG8RITOarY7BJISLrWReY7kJOhDDmX&s=10" alt="">
+            <h3>Netflix Clone</h3>
+            <p>Landing page built using HTML & CSS.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.dribbble.com/userupload/12735880/file/original-8182f7cd347b673c3ea101e4fcb817c3.png?resize=752x&vertical=center" alt="">
+            <h3>E-Commerce UI</h3>
+            <p>Modern shopping website interface.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Explore -->
+
+<section id="explore">
+
+    <h2>Explore</h2>
+
+    <div class="explore-grid">
+
+        <div class="explore-card">
+            <img src="https://media.licdn.com/dms/image/v2/D5612AQFfhTEictqBHA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721174916441?e=2147483647&v=beta&t=IqnGNJxS4J-yaL4rgLBlx-cbNAbFwpEMCRvkkLXsR48" alt="">
+            <h3>Frontend Development</h3>
+        </div>
+
+        <div class="explore-card">
+            <img src="https://img.magnific.com/free-photo/representations-user-experience-interface-design_23-2150104516.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+            <h3>UI Design</h3>
+        </div>
+
+        <div class="explore-card">
+            <img src="https://st.depositphotos.com/1152339/3313/i/950/depositphotos_33136993-stock-photo-seo-web-design-concept-web.jpg" alt="">
+            <h3>Web Technologies</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Maraiseelan | Web Developer</p>
+</footer>
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* Navigation */
+.menu-btn{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+
+/* Mobile Menu */
+@media screen and (max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#020617;
+        text-align:center;
+        padding:20px 0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+}
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.8);
+z-index:1000;
+}
+.container img{
+   
+  width:300px;
+height:300px;
+border-radius:50%;
+ display: block;
+  margin: 0 auto 20px;
+object-fit:cover;
+border:5px solid #38bdf8;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+/* Home */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:100px 10%;
+gap:50px;
+}
+
+.hero-content{
+flex:1;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-content span{
+color:#38bdf8;
+}
+
+.hero-content h2{
+font-size:35px;
+margin-bottom:20px;
+}
+.about-content h3{
+    text-align: center;
+}
+
+.hero-content p{
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+.about-content p{
+    text-align: center;
+    font-size: x-large;
+}
+
+.hero-image img{
+width:350px;
+height:350px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+}
+
+/* Sections */
+
+section{
+padding:100px 10%;
+min-height:100vh;
+}
+
+h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#38bdf8;
+}
+
+/* About */
+
+.about-content{
+display:flex;
+align-items:center;
+gap:40px;
+}
+
+.about-content img{
+width:400px;
+border-radius:20px;
+}
+
+.skills{
+margin-top:20px;
+text-align: center;
+}
+
+.skills span{
+display:inline-block;
+background:#38bdf8;
+padding:10px 15px;
+margin:5px;
+border-radius:20px;
+}
+
+/* Work */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+height:220px;
+object-fit:cover;
+}
+
+/* Explore */
+
+.explore-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.explore-card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.explore-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* Contact */
+
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:15px;
+border:none;
+border-radius:10px;
+}
+
+button{
+padding:15px;
+background:#38bdf8;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:10px;
+font-size:16px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+/* Large Devices (Laptops) */
+@media screen and (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-image img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media screen and (max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .about-content img {
+        width: 300px;
+    }
+}
+
+/* Small Devices (Mobile) */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .projects,
+    .explore-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-content img {
+        width: 180px;
+    }
+
+    .projects,
+    .explore-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 80px 5%;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+    }
+}
+/* Image Hover Effect */
+
+.hero-image img,
+.about-content img,
+.card img,
+.explore-card img{
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.hero-image img:hover,
+.about-content img:hover,
+.card img:hover,
+.explore-card img:hover{
+    transform: scale(1.1);
+}
+</style>
+</body>
+</html>
